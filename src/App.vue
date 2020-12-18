@@ -106,7 +106,7 @@
     height: 75vh;
     margin: 0%;
     padding: 0%;
-    background: #FDFEFE ;
+    background: #BDE2C8 ;
   }
   .footer{
     margin: 0;
@@ -114,7 +114,7 @@
     width: 100%;
     height: 10vh;
     min-height: 100px;
-    background-color: #283747;
+    background-color: #2E6F41;
     color: #E5E7E9;
   }
   .footer h2{

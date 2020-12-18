@@ -1,6 +1,6 @@
 <template>
    <div id="User">
-       <h2>Hola <span> {{username}}, </span> ¡Bienvenido a Dokiman, el administrador de documentos por excelencia!</h2>
+       <h2>Hola <span> {¡Bienvenido a Dokiman!}, </span> El administrador de documentos por excelencia!</h2>
    </div>
 </template>
 
