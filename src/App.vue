@@ -5,8 +5,8 @@
       <h1>DOKIMAN</h1>
       <nav>
         <button v-on:click="init" v-if="is_auth" > Inicio </button>
-        <button v-on:click="getBalance" v-if="is_auth" > Saldo </button>
-        <button v-if="is_auth" > Transacción </button>
+        <button v-on:click="getBalance" v-if="is_auth" > Información </button>
+        <button v-if="is_auth" > Cambio Contraseña </button>
         <button v-if="is_auth" >Cerrar Sesión</button>
       </nav>
     </div>
@@ -14,7 +14,7 @@
       <router-view></router-view>
     </div>
     <div class="footer">
-      <h2>Misión TIC 2022-Ciclo 3</h2>
+      <h2>Misión TIC 2022 - Ciclo 3</h2>
     </div>
   </div>
 </template>
@@ -69,7 +69,7 @@
     height: 10vh;
     min-height: 100px;
 
-    background-color: #283747 ;
+    background-color: #5E5452 ;
     color:#E5E7E9  ;
 
     display: flex;
