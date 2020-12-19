@@ -50,10 +50,10 @@
     },
 
     beforeCreate: function(){
-      localStorage.setItem('current_username', 'camilo24')
+      localStorage.setItem('current_username', 'cinthya@example.com')
       localStorage.setItem('isAuth', true)
 
-      this.$router.push({name: "user", params:{ username: 'camilo24' }})
+      this.$router.push({name: "user", params:{ username: 'cinthya@example.com' }})
     }
   }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div id="UserBalance">
      <h2>{{username}}</h2>
-     <h2>Tu saldo es: <span> {{balance}} COP </span> </h2>
+     <h2>Su información es la siguienta: <span> {{balance}} COP </span> </h2>
   </div>
 </template>
 
@@ -12,16 +12,18 @@
       data: function (){
        return {
                 username: "",
-                balance: 0
+                name:"",
+                last_name:"",
+                documentos:{}
              }
        },
 
 created: function(){
    this.username = this.$route.params.username
    let self = this
-   axios.get("https://cajeroback-end.herokuapp.com/user/balance/" + this.username)
+   axios.get("https://dokiman.herokuapp.com//user/balance/" + this.username)
       .then((result) => {
-          self.balance = result.data.balance
+          self.balance = result.data.name
       })
       .catch((error) => {
              alert("ERROR Servidor");
