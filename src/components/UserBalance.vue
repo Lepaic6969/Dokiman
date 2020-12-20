@@ -1,7 +1,8 @@
 <template>
   <div id="UserBalance">
      <h2>{{username}}</h2>
-     <h2>nombre: <span> {{name}}  </span> </h2>
+     <h2>nombre: <span> {{name}}  </span><br>apellido:<span> {{last_name}}</span></h2>
+     <h3>documentos disponibles: {{documentos}} </h3>
   </div>
 </template>
 
@@ -26,6 +27,9 @@ created: function(){
    //        
       .then((result) => {
           self.name = result.data.name
+          self.last_name=result.data.last_name
+          self.documentos=result.data.documents
+
       })
       .catch((error) => {
              alert("ERROR Servidor");
