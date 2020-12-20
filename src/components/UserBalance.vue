@@ -1,7 +1,7 @@
 <template>
   <div id="UserBalance">
      <h2>{{username}}</h2>
-     <h2>Su información es la siguienta: <span> {{balance}}  </span> </h2>
+     <h2>nombre: <span> {{balance}}  </span> </h2>
   </div>
 </template>
 
@@ -12,9 +12,10 @@
       data: function (){
        return {
                 username: "",
-                name:"",
+                name:"Carlos Sierra",
                 last_name:"",
-                documentos:{}
+                documentos:{},
+                balance:"jaja"
              }
        },
 
@@ -22,6 +23,7 @@ created: function(){
    this.username = this.$route.params.username
    let self = this
    axios.get("https://dokiman.herokuapp.com/user/balance/" + this.username) 
+   //         
       .then((result) => {
           self.balance = result.data.name
       })
