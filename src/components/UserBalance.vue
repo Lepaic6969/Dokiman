@@ -1,8 +1,8 @@
 <template>
   <div id="UserBalance">
      <h2>{{username}}</h2>
-     <h2>nombre: <span> {{name}}  </span><br>apellido:<span> {{last_name}}</span></h2>
-     <h3>documentos disponibles: {{documentos}} </h3>
+     <h2>Nombre: <span> {{name}}  </span><br>Apellido:<span> {{last_name}}</span><br>Documentos disponibles: {{documentos}}</h2>
+     
   </div>
 </template>
 
